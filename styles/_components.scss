@@ -1,0 +1,575 @@
+.landing {
+    &__navbar {        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 3rem 6rem;
+
+        &__logo {
+            width: 17.5rem;
+
+            @media screen and (max-width: $bp-smallest) {
+                width: 10rem;
+            }
+        }
+
+        &__button {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            color: $very-dark-cyan;
+            background-color: #fff;
+            cursor: pointer;
+
+            width: 20rem;
+            height: 5rem;
+            border-radius: 3rem;
+            border: none;
+            outline: none;
+            box-shadow: 1px 1px 10px $grayish-blue;
+
+            @media screen and (max-width: $bp-smallest) {
+                width: 15rem;
+                height: 4rem;
+            }
+        }
+
+        @media screen and (max-width: $bp-sixth-largest) {
+            padding: 3rem 2rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+
+        @media screen and (max-width: $bp-smallest) {
+            padding: 1rem;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        &__left {
+            flex: 0 0 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 7.5rem 0 7.5rem 6.5rem;
+
+            @media screen and (max-width: $bp-fifth-largest) {
+                padding: 2.5rem 0 7.5rem 6.5rem;
+            }
+
+            @media screen and (max-width: $bp-smallest) {
+                padding: 0rem;
+                align-items: center;
+            }
+        }
+
+        &__right {
+            flex: 1;
+            padding: 5rem;
+
+            @media screen and (max-width: $bp-sixth-largest) {
+                display: none;
+            }
+
+            @media screen and (max-width: $bp-smallest) {
+                display: block;
+                justify-content: center;
+                padding: 1rem;
+                margin-top: 5rem;
+            }
+        }
+
+        &__img {
+            width: 100%;
+        }
+
+        &__title {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 3.8rem;
+            color: $very-dark-cyan;
+            margin: 7.5rem 0rem 4rem 0rem;
+
+            @media screen and (max-width: $bp-largest) {
+                margin: 5.5rem 0rem 4rem 0rem;
+                font-size: 3.5rem;
+            }
+
+            @media screen and (max-width: $bp-second-largest) {
+                margin: 3.5rem 0rem 4rem 0rem;
+                font-size: 3.2rem;
+            }
+
+            @media screen and (max-width: $bp-third-largest) {
+                font-size: 3rem;
+            }
+
+            @media screen and (max-width: $bp-fourth-largest) {
+                margin: 1.5rem 0rem 4rem 0rem;
+                font-size: 2.8rem;
+            }
+            
+            @media screen and (max-width: $bp-fifth-largest) {
+                margin: 0rem 0rem 4rem 0rem;
+                
+            }
+
+            @media screen and (max-width: $bp-smallest) {
+                justify-content: center;
+                text-align: center;
+                font-size: 2.5rem;
+                margin: 0rem 0rem 2rem 0rem;
+            }
+        }
+
+        &__subtitle {
+            font-size: 1.8rem;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+            color: $very-dark-cyan;
+            line-height: 2.75rem;
+            margin-bottom: 4rem;
+
+            @media screen and (max-width: $bp-largest) {
+                font-size: 1.7rem;
+            }
+
+            @media screen and (max-width: $bp-second-largest) {
+                font-size: 1.6rem;
+            }
+
+            @media screen and (max-width: $bp-fourth-largest) {
+                font-size: 1.5rem;
+            }
+        }
+
+        &__button {
+            width: 27.5rem;
+            height: 6rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: $pink;
+            border: none;
+            outline: none;
+            border-radius: 3rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.card {
+    &__one {
+        @media screen and (max-width: $bp-smallest) {
+            flex-direction: column-reverse;
+        }
+        &__content {
+            flex: 0 0 60%;
+            padding: 7.5rem 8rem 7.5rem 10.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media screen and (max-width: $bp-third-largest) {
+                padding: 7.5rem 8rem 7.5rem 7.5rem;
+            }
+
+            @media screen and (max-width: $bp-fourth-largest) {
+                padding: 5.5rem 6rem 5.5rem 3.5rem;
+            }
+
+            @media screen and (max-width: $bp-sixth-largest) {
+                padding: 1rem 0rem 1rem 1rem;
+            }
+
+            @media screen and (max-width: $bp-smallest) {
+                align-items: center;
+                text-align: center;
+                padding: 1rem;
+            }
+        }
+
+        &__imgcont {
+            flex: 1;
+            padding: 3rem;
+            display: flex;
+            justify-content: flex-end;
+
+            @media screen and (max-width: $bp-sixth-largest) {
+                padding: 1rem;
+            }
+
+            @media screen and (max-width: $bp-smallest) {
+                padding: 3rem;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        &__title {
+            font-size: 2.4rem;
+            font-family: "Poppins", sans-serif;
+            margin-bottom: 1rem;
+            color: $very-dark-cyan;
+
+            @media screen and (max-width: $bp-fourth-largest) {
+                font-size: 2.2rem;
+            }
+        }
+
+        &__subtitle {
+            font-size: 1.6rem;
+            font-family: "Open Sans", sans-serif;
+            color: $grayish-blue;
+            padding-right: 11rem;
+
+            @media screen and (max-width: $bp-third-largest) {
+                padding-right: 8.5rem;
+            }
+
+            @media screen and (max-width: $bp-fourth-largest) {
+                font-size: 1.5rem;
+                padding-right: 5.5rem;
+            }
+
+            @media screen and (max-width: $bp-fifth-largest) {
+                padding-right: 0rem;
+            }
+
+            @media screen and (max-width: $bp-smallest) {
+                padding: 1rem;
+            }
+        }
+    }
+
+    &__two {
+        &__imgcont {
+            flex: 0 0 40%;
+            padding: 3rem 0rem 3rem 10rem;
+
+            @media screen and (max-width: $bp-third-largest) {
+                padding: 3rem 0rem 3rem 5rem;
+            }
+
+            @media screen and (max-width: $bp-sixth-largest) {
+                padding: 1rem;
+            }
+
+            @media screen and (max-width: $bp-smallest) {
+                padding: 3rem;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        &__content {
+            flex: 1;
+            padding: 7.5rem 2rem 7.5rem 20rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media screen and (max-width: $bp-third-largest) {
+                padding: 7.5rem 3rem 7.5rem 15rem;
+            }
+
+            @media screen and (max-width: $bp-fourth-largest) {
+                padding: 5.5rem 3rem 5.5rem 5rem;
+            }
+
+            @media screen and (max-width: $bp-sixth-largest) {
+                padding: 2rem 1rem 2rem 1rem;
+            }
+
+            @media screen and (max-width: $bp-smallest) {
+                align-items: center;
+                text-align: center;
+                padding: 1rem;
+            }
+        }
+
+        &__title {
+            font-size: 2.4rem;
+            font-family: "Poppins", sans-serif;
+            margin-bottom: 1rem;
+            color: $very-dark-cyan;
+
+            @media screen and (max-width: $bp-fourth-largest) {
+                font-size: 2.2rem;
+            }
+        }
+
+        &__subtitle {
+            font-size: 1.6rem;
+            font-family: "Open Sans", sans-serif;
+            color: $grayish-blue;
+            padding-right: 6rem;
+
+            @media screen and (max-width: $bp-fourth-largest) {
+                font-size: 1.5rem;
+                padding-right: 4rem;
+            }
+
+            @media screen and (max-width: $bp-fifth-largest) {
+                padding-right: 0rem;
+            }
+
+            @media screen and (max-width: $bp-smallest) {
+                padding: 1rem;
+            }
+        }
+    }
+
+    &__three {
+        @media screen and (max-width: $bp-smallest) {
+            flex-direction: column-reverse;
+        }
+        &__content {
+            flex: 0 0 60%;
+            padding: 7.5rem 8rem 7.5rem 10.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media screen and (max-width: $bp-third-largest) {
+                padding: 7.5rem 8rem 7.5rem 7.5rem;
+            }
+
+            @media screen and (max-width: $bp-fourth-largest) {
+                padding: 7.5rem 5rem 7.5rem 3rem;
+            }
+
+            @media screen and (max-width: $bp-sixth-largest) {
+                padding: 1rem;
+            }
+
+            @media screen and (max-width: $bp-smallest) {
+                align-items: center;
+                text-align: center;
+                padding: 1rem;
+            }
+        }
+
+        &__imgcont {
+            flex: 1;
+            padding: 3rem;
+            display: flex;
+            justify-content: flex-end;
+
+            @media screen and (max-width: $bp-sixth-largest) {
+                padding: 1rem;
+            }
+
+            @media screen and (max-width: $bp-smallest) {
+                padding: 3rem;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        &__title {
+            font-size: 2.4rem;
+            font-family: "Poppins", sans-serif;
+            margin-bottom: 1rem;
+            color: $very-dark-cyan;
+
+            @media screen and (max-width: $bp-fourth-largest) {
+                font-size: 2.2rem;
+            }
+        }
+
+        &__subtitle {
+            font-size: 1.6rem;
+            font-family: "Open Sans", sans-serif;
+            color: $grayish-blue;
+            padding-right: 14rem;
+
+            @media screen and (max-width: $bp-third-largest) {
+                padding-right: 7.5rem;
+            }
+
+            @media screen and (max-width: $bp-fourth-largest) {
+                font-size: 1.5rem;
+            }
+
+            @media screen and (max-width: $bp-fifth-largest) {
+                padding-right: 0rem;
+            }
+
+            @media screen and (max-width: $bp-smallest) {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+.cta {
+    &__header {
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        color: $very-dark-cyan;
+
+        @media screen and (max-width: $bp-fourth-largest) {
+            font-size: 2rem;
+        }
+
+        @media screen and (max-width: $bp-fifth-largest) {
+            font-size: 1.8rem;
+            text-align: center;
+        }
+    }
+
+    &__button {
+        width: 30rem;
+        height: 5rem;
+        background-color: $pink;
+        color: #fff;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3rem;
+        cursor: pointer;
+
+        @media screen and (max-width: $bp-fourth-largest) {
+            font-size: 1.4rem;
+            width: 25rem;
+        }
+
+        @media screen and (max-width: $bp-fifth-largest) {
+            font-size: 1.4rem;
+            width: 20rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+}
+
+.footer {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 1.4rem;
+
+    @media screen and (max-width: $bp-sixth-largest) {
+        font-size: 1.2rem;
+    }
+
+    &__first {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 5rem;
+        flex: 0 0 30%;
+
+        &__logo {
+            width: 20rem;
+            margin-bottom: 3rem;
+
+            
+            @media screen and (max-width: $bp-fifth-largest) {
+                width: 15rem;
+            }
+        }
+
+        &__location, &__contact, &__email {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+
+        &__icon {
+            width: 1.5rem;
+            height: 1.75rem;
+            margin-right: 2rem;
+        }
+
+        @media screen and (max-width: $bp-fifth-largest) {
+            padding-right: 1rem;
+        }
+
+        @media screen and (max-width: $bp-fifth-largest) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__second, &__third {
+        display: flex;
+        flex: 0 0 23%;
+
+        justify-content: flex-start;
+        margin: 6.5rem 0 0 0;
+        padding-left: 5rem;
+
+        &__list {
+            list-style: none;
+        }
+
+        &__item {
+            margin-bottom: 2rem;
+        }
+
+        @media screen and (max-width: $bp-fifth-largest) {
+            padding-left: 1rem;
+        }
+
+        @media screen and (max-width: $bp-smallest) {
+            margin: 0;
+        }
+    }
+
+    &__fourth {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 5rem;
+        margin: 6.5rem 0 0 0;
+
+        &__icon {
+            width: 3rem;
+            height: 3rem;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+
+        &__span {
+            font-size: 1.2rem;
+        }
+
+        &__icons {
+            @media screen and (max-width: $bp-smallest) {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 2rem;
+            }
+        }
+
+        @media screen and (max-width: $bp-fifth-largest) {
+            padding-left: 1rem;
+        }
+
+        @media screen and (max-width: $bp-smallest) {
+            margin: 3rem 0 0 0;
+        }
+    }
+}

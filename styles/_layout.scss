@@ -1,0 +1,93 @@
+.landing {
+    height: 95vh;
+    background-image: url('../images/bg-hero-desktop.svg');
+    background-color: $very-pale-cyan;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: $bp-largest) {
+        height: 91.5vh;
+    }
+
+    @media screen and (max-width: $bp-second-largest) {
+        height: 88vh;
+    }
+
+    @media screen and (max-width: $bp-third-largest) {
+        height: 84.5vh;
+    }
+
+    @media screen and (max-width: $bp-fourth-largest) {
+        height: 81vh;
+    }
+
+    @media screen and (max-width: $bp-smallest) {
+        width: 100%;
+        min-height: 80vh;
+    }
+}
+
+.cards {
+    min-height: 100vh;
+    padding: 8rem;
+
+    @media screen and (max-width: $bp-sixth-largest) {
+         padding: 2rem;   
+    }
+    
+    &__card {
+        margin-bottom: 3rem;
+        height: 35rem;
+        border-radius: 2rem;
+        box-shadow: 1px 1px 10px rgb(211, 208, 208);
+
+        display: flex;
+
+        @media screen and (max-width: $bp-smallest) {
+            flex-direction: column;
+            height: 100%;
+        }
+    }
+}
+
+.cta {
+    z-index: 10;
+    position: absolute;
+    width: 50%;
+    height: 20rem;
+    background-color: #fff;
+    left: 25%;
+    border-radius: 1rem;
+    box-shadow: 1px -2px 10px rgb(211, 208, 208);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: $bp-smallest) {
+        width: 90%;
+        left: 5%;
+        height: 17.5rem;
+    }
+}
+
+.footer {
+    z-index: 1;
+    position: relative;
+    min-height: 50vh;
+    margin-top: 10rem;
+    background-color: $very-dark-cyan;
+    padding: 15rem 5rem 3rem 8rem;
+    
+    display: flex;
+    justify-content: space-around;
+
+    @media screen and (max-width: $bp-fifth-largest) {
+        padding: 15rem 2rem 3rem 2rem;
+    }
+
+    @media screen and (max-width: $bp-smallest) {
+        flex-direction: column;
+    }
+}

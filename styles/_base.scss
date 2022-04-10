@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+// Primary
+$pink: hsl(322, 100%, 66%);
+
+// Neutral
+$very-pale-cyan: hsl(193, 100%, 96%);
+$very-dark-cyan: hsl(192, 100%, 9%);
+$grayish-blue: hsl(208, 11%, 55%);
+
+// Breakpoints
+$bp-largest: 1250px;
+$bp-second-largest: 1150px;
+$bp-third-largest: 1060px;
+$bp-fourth-largest: 1000px;
+$bp-fifth-largest: 850px;
+$bp-sixth-largest: 600px;
+$bp-smallest: 375px;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}

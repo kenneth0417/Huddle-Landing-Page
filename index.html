@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <title>
+      Frontend Mentor | Huddle landing page with alternating feature blocks
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="landing">
+      <navbar class="landing__navbar">
+        <a href="#">
+          <img class="landing__navbar__logo" src="images/logo.svg" alt="logo" />
+        </a>
+        <button class="landing__navbar__button">Try It Free</button>
+      </navbar>
+      <div class="landing__content">
+        <div class="landing__content__left">
+          <h1 class="landing__content__title">
+            Build The Community Your Fans Will Love
+          </h1>
+          <p class="landing__content__subtitle">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button class="landing__content__button">Get Started For Free</button>
+        </div>
+        <div class="landing__content__right">
+          <img
+            src="images/illustration-mockups.svg"
+            alt="illustration"
+            class="landing__content__img"
+          />
+        </div>
+      </div>
+    </main>
+
+    <section class="cards">
+      <div class="cards__card card__one">
+        <div class="card__one__content">
+          <h1 class="card__one__title">Grow Together</h1>
+          <p class="card__one__subtitle">
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community.Think of the insightful conversations you
+            miss out on with a feedback form.
+          </p>
+        </div>
+        <div class="card__one__imgcont">
+          <img
+            class="card__one__img"
+            src="images/illustration-grow-together.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="cards__card card__two">
+        <div class="card__two__imgcont">
+          <img
+            class="card__two__img"
+            src="images/illustration-flowing-conversation.svg"
+            alt=""
+          />
+        </div>
+        <div class="card__two__content">
+          <h1 class="card__two__title">Flowing Conversations</h1>
+          <p class="card__two__subtitle">
+            You wouldn't paginate a conversation in real life, so why do it
+            online? Our threads have just-in-time loading for a more natural
+            flow.
+          </p>
+        </div>
+      </div>
+      <div class="cards__card card__three">
+        <div class="card__three__content">
+          <h1 class="card__three__title">Your Users</h1>
+          <p class="card__three__subtitle">
+            It takes no time at all to integrate Huddle with your app's
+            authentication solution.This means, once signed in to your app, your
+            users can start chatting immediately.
+          </p>
+        </div>
+        <div class="card__three__imgcont">
+          <img
+            class="card__three__img"
+            src="images/illustration-your-users.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h1 class="cta__header">Ready To Build Your Community?</h1>
+      <a class="cta__link" href="#"
+        ><div class="cta__button">Get Started For Free</div></a
+      >
+    </section>
+
+    <footer class="footer">
+      <div class="footer__first">
+        <img
+          src="images/footer-logo.svg"
+          alt="logo"
+          class="footer__first__logo"
+        />
+        <!-- <div class="footer__first__logo"></div> -->
+        <div class="footer__first__location">
+          <img
+            class="footer__first__icon"
+            src="images/icon-location.svg"
+            aria-label="locationlogo"
+          />
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua</span
+          >
+        </div>
+        <div class="footer__first__contact">
+          <img
+            class="footer__first__icon"
+            src="images/icon-phone.svg"
+            aria-label="phonelogo"
+          />
+          <span>+1-543-123-4567</span>
+        </div>
+        <div class="footer__first__email">
+          <img
+            class="footer__first__icon"
+            src="images/icon-email.svg"
+            aria-label="emaillogo"
+          />
+          <span>example@huddle.com</span>
+        </div>
+      </div>
+      <div class="footer__second">
+        <ul class="footer__second__list">
+          <li class="footer__second__item">About Us</li>
+          <li class="footer__second__item">What We Do</li>
+          <li class="footer__second__item">FAQ</li>
+        </ul>
+      </div>
+      <div class="footer__third">
+        <ul class="footer__third__list">
+          <li class="footer__third__item">Career</li>
+          <li class="footer__third__item">Blog</li>
+          <li class="footer__third__item">Contact Us</li>
+        </ul>
+      </div>
+      <div class="footer__fourth">
+        <div class="footer__fourth__icons">
+          <ion-icon
+            class="footer__fourth__icon"
+            name="logo-facebook"
+          ></ion-icon>
+          <ion-icon class="footer__fourth__icon" name="logo-twitter"></ion-icon>
+          <ion-icon
+            class="footer__fourth__icon"
+            name="logo-instagram"
+          ></ion-icon>
+        </div>
+        <div class="footer__fourth__copyright">
+          <span class="footer__fourth__span"
+            >&copy; Copyright 2018 Huddle. All rights reserved.</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
